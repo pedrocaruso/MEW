@@ -23,10 +23,14 @@
 
 # Autores
 
-Ana Beatriz
-Gustavo Pan
-Pedro Caruso 
-Sabrina Miyasaki
+Ana Beatriz - 10444937
+
+Gustavo Pan - 10426600
+
+Pedro Caruso - 10425184
+
+Sabrina Miyasaki - 10723723
+
 
 # Descrição do Projeto
 O projeto tem como objetivo criar um sistema informatizado para a Farmácia, com foco na automação dos processos de vendas, controle de estoque e cadastro de clientes. A iniciativa visa substituir o atual processo manual, minimizando erros e facilitando a gestão administrativa e financeira.
@@ -94,6 +98,162 @@ RNF-07.(Backup).	O sistema deve ser implementado de forma que permita futuras ex
 
 
 # Descrição dos Casos de Uso
+Caso de Uso: Realizar Cadastro
+Ator Principal: Cliente
+
+
+Ator Secundário: Atendente
+
+
+Descrição:
+O cliente chega até a loja e fornece suas informações e dados pessoais. O atendente solicita os dados e realiza o cadastro no sistema. Ao final do processo, o cliente passa a ter um perfil registrado.
+
+
+Pré-condição:
+O cliente não deve ter um cadastro prévio no sistema.
+
+
+Pós-condição:
+O cliente passa a possuir um perfil ativo no sistema.
+
+
+Fluxo Principal:
+
+
+O cliente chega à loja.
+
+
+O atendente solicita os dados do cliente.
+
+
+O cliente fornece os dados.
+
+
+O atendente realiza o cadastro no sistema.
+
+
+—------------------------------------------------------------------------------------------------------------------------
+
+
+Caso de Uso: Realizar Compra
+Ator Principal: Cliente
+
+
+Ator Secundário: Atendente (Caixa)
+
+
+Descrição:
+O cliente seleciona os produtos desejados e se dirige ao caixa para efetuar o pagamento. O caixa escaneia os produtos, informa o valor ao cliente, valida o pagamento e aplica eventuais descontos. Após a finalização, o cliente recebe os produtos adquiridos.
+
+
+Pré-condição:
+O cliente deve possuir cadastro no sistema.
+
+
+Pós-condição:
+O cliente realiza a compra e recebe os produtos.
+
+
+Fluxo Principal:
+
+
+O cliente leva os produtos ao caixa.
+
+
+O caixa escaneia os produtos e informa o valor ao cliente.
+
+
+O cliente escolhe a forma de pagamento.
+
+
+O caixa valida o pagamento e aplica os descontos.
+
+
+O cliente sai da loja com os produtos.
+
+
+—------------------------------------------------------------------------------------------------------------------------
+
+
+Caso de Uso: Consulta de Estoque
+Ator Principal: Atendente
+
+
+Descrição:
+O atendente acessa o sistema para verificar quais produtos estão disponíveis no estoque. O sistema exibe a lista atualizada com as quantidades disponíveis de cada item.
+
+
+Pré-condição:
+Os produtos precisam estar cadastrados e com as informações atualizadas no sistema.
+
+
+Pós-condição:
+O atendente obtém a informação sobre a disponibilidade dos produtos.
+
+
+Fluxo Principal:
+
+
+O atendente acessa o sistema e consulta o estoque.
+
+
+O sistema exibe a lista de produtos disponíveis.
+
+
+—------------------------------------------------------------------------------------------------------------------------
+
+
+Caso de Uso: Atualiza Estoque
+Ator Principal: Atendente
+
+
+Descrição:
+Quando há alterações nas quantidades dos produtos, o atendente acessa o sistema e realiza as modificações necessárias no estoque. Após as alterações, o sistema salva automaticamente os novos dados.
+
+
+Pré-condição:
+O estoque precisa ser ajustado devido a vendas, reposições ou perdas.
+
+
+Pós-condição:
+O estoque é atualizado com as quantidades corretas.
+
+
+Fluxo Principal:
+
+
+O atendente acessa o sistema e realiza as modificações no estoque.
+
+
+O sistema salva as alterações feitas.
+
+
+—------------------------------------------------------------------------------------------------------------------------
+
+
+Caso de Uso: Alerta de Baixa Quantidade dos Produtos
+Ator Principal: Atendente
+
+
+Descrição:
+Quando o estoque de determinado produto atinge um nível mínimo, o sistema envia automaticamente um alerta ao atendente. O atendente verifica a situação e decide se faz a reposição ou atualiza o estoque.
+
+
+Pré-condição:
+O estoque deve estar previamente atualizado.
+
+
+Pós-condição:
+O atendente é informado sobre a baixa quantidade e toma as ações necessárias para normalizar a situação.
+
+
+Fluxo Principal:
+
+
+O sistema envia um alerta ao atendente sobre a baixa quantidade de um produto.
+
+
+O atendente verifica o estoque e decide entre atualizá-lo ou realizar o reabastecimento
 
 
 # Diagrama de Sequência
